@@ -9,11 +9,11 @@
   <br />
   <br />
 
-  <h2 align="center">Desinic - Agency website</h2>
+  <h2 align="center">Zion Computers Private Limited </h2>
 
-  Desinic is fully responsive agency website, <br />Responsive for all devices, built using HTML, CSS, and JavaScript.
+ZCPL is a IT solutions website <br />IT infrastructure solutions and managed IT services
 
-  <a href="https://codewithsadee.github.io/desinic/"><strong>➥ Live Demo</strong></a>
+<a href="https://sites.google.com/a/ziongroup.com/www-zcpl-co-in/welcome-to-zion-group"><strong>➥ Website Demo</strong></a>
 
 </div>
 
@@ -27,28 +27,24 @@
 
 Before you begin, ensure you have met the following requirements:
 
-* [Git](https://git-scm.com/downloads "Download Git") must be installed on your operating system.
+- [Git](https://git-scm.com/downloads "Download Git") must be installed on your operating system.
 
 ### Run Locally
 
-To run **Desinic** locally, run this command on your git bash:
+To run **Website** locally, run this command on your git bash:
 
 Linux and macOS:
 
 ```bash
-sudo git clone https://github.com/codewithsadee/desinic.git
+sudo git clone https://github.com/ZionComp/zion-comp.git
 ```
 
 Windows:
 
 ```bash
-git clone https://github.com/codewithsadee/desinic.git
+git clone https://github.com/ZionComp/zion-comp.git
 ```
 
 ### Contact
 
-If you want to contact with me you can reach me at [Twitter](https://www.twitter.com/codewithsadee).
-
-### License
-
-This project is **free to use** and does not contains any license.
+If you want to contact with me you can reach me at [Twitter](https://twitter.com/ZionComp).
