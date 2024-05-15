@@ -369,7 +369,7 @@ body {
   content: '';
   width: 0;
   height: 2px;
-  background: #000000;
+  background: #ffffff;
   display: block;
   margin: auto;
   transition: 0.5s;
