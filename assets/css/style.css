@@ -304,6 +304,7 @@ body {
 }
 
 .header .container {
+  height: 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -329,7 +330,7 @@ body {
   left: -280px;
   width: 100%;
   max-width: 280px;
-  min-height: 100%;
+  min-height: 20px;
   padding: 20px;
   visibility: hidden;
   z-index: 2;
@@ -453,6 +454,10 @@ body {
 \*-----------------------------------*/
 
 .about-banner {
+  margin-top: 150px;
+  /* margin-left: -50px; */
+  /* padding-left: -50px; */
+  margin-right: 50px;
   margin-block-end: 30px;
 }
 
