@@ -760,7 +760,7 @@ body {
 }
 
 .footer-brand .logo {
-  margin-left: -75px;
+  /* margin-left: -10px; */
   align-items: left;
   text-align: left;
   font-weight: var(--fw-900);
