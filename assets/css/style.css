@@ -58,6 +58,7 @@
   --fw-500: 500;
   --fw-600: 600;
   --fw-700: 700;
+  --fw-900: 900;
 
   /**
    * border radius
@@ -759,7 +760,10 @@ body {
 }
 
 .footer-brand .logo {
-  font-weight: var(--fw-700);
+  margin-left: -75px;
+  align-items: left;
+  text-align: left;
+  font-weight: var(--fw-900);
   margin-block-end: 15px;
 }
 
@@ -769,6 +773,7 @@ body {
 }
 
 .social-list {
+  margin-left: -37.5px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -784,6 +789,7 @@ body {
 }
 
 .footer-top .social-link:is(:hover, :focus) {
+  transition: all 0.7s;
   background-image: var(--gradient-2);
   color: var(--white);
 }
