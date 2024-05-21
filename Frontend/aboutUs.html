@@ -1,143 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us</title>
+  <style>
+    :root {
+      --section-padding: 60px;
+      --bg-color: #f4f4f9;
+      --primary-color: #333;
+      --highlight-color: #ff6f61;
+      --text-color: #555;
+      --secondary-color: #ff6f61;
+      --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      --radius-12: 12px;
+      --fs-8: 16px;
+      --fs-2: 24px;
+      --fw-700: 700;
+    }
 
-    <!-- 
-        - google font link
-    -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Source+Sans+Pro:wght@600;700&display=swap"
-        rel="stylesheet">
+    .section {
+      padding: var(--section-padding) 0;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 15px;
+    }
+
+    .section-title {
+      font-size: 32px;
+      text-align: center;
+      color: var(--primary-color);
+      position: relative;
+      margin-bottom: 40px;
+    }
+
+    .underline::before {
+      content: '';
+      display: block;
+      width: 80px;
+      height: 4px;
+      background-color: var(--highlight-color);
+      position: absolute;
+      bottom: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .about-banner {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .about-banner .img-cover {
+      width: 100%;
+      border-radius: var(--radius-12);
+      box-shadow: var(--shadow);
+    }
+
+    .about-content {
+      margin-bottom: 40px;
+    }
+
+    .about-text {
+      font-size: var(--fs-8);
+      color: var(--text-color);
+      margin-bottom: 20px;
+      line-height: 1.6;
+    }
+
+    .stats-list {
+      display: grid;
+      gap: 30px;
+      text-align: center;
+    }
+
+    .stats-card {
+      padding: 15px;
+      box-shadow: var(--shadow);
+      border-radius: var(--radius-12);
+      background-color: var(--secondary-color);
+      color: var(--bg-color);
+    }
+
+    .stats-title {
+      font-size: var(--fs-2);
+      font-weight: var(--fw-700);
+      margin-bottom: 10px;
+      color: var(--bg-color);
+    }
+
+    .stats-text {
+      font-size: var(--fs-8);
+    }
+
+    @media (min-width: 550px) {
+      .stats-list {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    @media (min-width: 992px) {
+      .about .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+      }
+    }
+  </style>
 </head>
-
 <body>
-    <header class="header" data-header>
-        <div class="container">
-
-            <div class="overlay" data-overlay></div>
-
-            <img src="assets\images\Zion Round logo.png" width="87">
-            <h1 class="logo">Zion Computers</h1>
-            </a>
-
-            <nav class="navbar" data-navbar>
-
-                <div class="navbar-top">
-                    <a href="#home" class="logo"></a>
-
-                    <button class="nav-close-btn" aria-label="Close Menu" data-nav-close-btn>
-                        <ion-icon name="close-outline"></ion-icon>
-                    </button>
-                </div>
-
-                <ul class="navbar-list">
-
-                    <li class="navbar-item">
-                        <a href="#home" class="navbar-link" data-navbar-link>Home</a>
-                    </li>
-
-                    <li class="navbar-item">
-                        <a href="About us.html" class="navbar-link" data-navbar-link>About</a>
-                    </li>
-
-                    <li class="navbar-item">
-                        <a href="#solutions" class="navbar-link" data-navbar-link>Solutions</a>
-                    </li>
-
-                    <li class="navbar-item">
-                        <a href="#services" class="navbar-link" data-navbar-link>Services</a>
-                    </li>
-
-                    <li class="navbar-item">
-                        <a href="#contactus" class="navbar-link" data-navbar-link>Contact Us</a>
-                    </li>
-
-                    <li class="navbar-item">
-                        <a href="./LOGIN PAGE/index.html#login" class="navbar-link" data-navbar-link>Login</a>
-                    </li>
-
-                    <li class="navbar-item">
-                        <a href="./LOGIN PAGE/index.html#signup" class="navbar-link" data-navbar-link>SignUp</a>
-                    </li>
-
-                </ul>
-
-            </nav>
-            <button class="nav-open-btn" aria-label="Open Menu" data-nav-open-btn>
-                <ion-icon name="menu-outline"></ion-icon>
-            </button>
-
-        </div>
-    </header>
-
-    <main>
-        <article>
-
-            <!--- #HERO-->
-
-            <section class="hero" id="home">
-                <div class="container">
-
-                    <div class="hero-content">
-
-                        <h6 class="h2 hero-titles"><span>About Us</span><br> With a proven track record and years of
-                            industry expertise, our IT professionals deliver customized, cutting-edge
-                            solutions. We prioritize customer satisfaction with 24/7 support, ensuring your unique needs
-                            are met with innovative
-                            technology.
-                        </h6>
-
-                        <p class="hero-text">
-                            <i> Rely on us for your IT Solutions , we will do it differently</i>
-                        </p>
-
-                    </div>
-
-                    <figure class="hero-banner">
-                        <img src="assets\images\Logo.png" width="694" height="529" loading="lazy" alt="hero-banner"
-                            class="w-100 banner-animation">
-                    </figure>
-
-                </div>
-            </section>
-        </article>
-    </main>
-
-    <h1>Vision</h1>
-    <p>To be the preferred technology integration and managed services company for our customers across the globe.</p>
-
-    <h1>Mission</h1>
-    <p>Zion Computers is committed to continually building a customer-centric service delivery organization through the
-        integration of people, processes, and technology, in order to continually move up the value chain while driving
-        costs down to maximize value delivered to customers.</p>
-
-    <h1>Core Values</h1>
-    <ol type="1">
-        <li>
-            <p>Continuous Learning: Either learn or teach!</p>
+  <section id="about" class="about section">
+    <div class="container">
+      <h2 class="section-title underline">About Us</h2>
+      
+      <div class="about-banner">
+        <img src="../images/about-banner.jpg" alt="About Us Banner" class="img-cover">
+      </div>
+      
+      <div class="about-content">
+        <p class="about-text">
+          Welcome to our company! We are dedicated to providing the best services in the industry. Our team of experts works tirelessly to ensure customer satisfaction and deliver top-notch results.
+        </p>
+        <p class="about-text">
+          With years of experience and a commitment to excellence, we are your go-to solution for all your needs. Join us on this journey to success and let us help you achieve your goals.
+        </p>
+      </div>
+  
+      <ul class="stats-list">
+        <li class="stats-card">
+          <p class="stats-title">100+</p>
+          <p class="stats-text">Projects Completed</p>
         </li>
-        <li>
-            <p>Innovation: It is your mind that creates the world.</p>
+        <li class="stats-card">
+          <p class="stats-title">200+</p>
+          <p class="stats-text">Satisfied Clients</p>
         </li>
-        <li>
-            <p>Honesty: It's being straightforward, sometimes even being perceived as rude. But still, we love being
-                straightforward.</p>
+        <li class="stats-card">
+          <p class="stats-title">50+</p>
+          <p class="stats-text">Awards Won</p>
         </li>
-        <li>
-            <p>Quality: Courage is rightly esteemed the first of human qualities because it is the quality which
-                guarantees all others.</p>
-        </li>
-        <li>
-            <p>Attitude: Begin by always expecting good things to happen, and it drives us forward.</p>
-        </li>
-    </ol>
+      </ul>
+    </div>
+  </section>
 </body>
-
 </html>
