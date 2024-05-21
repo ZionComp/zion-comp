@@ -11,7 +11,7 @@
 
   <h2 align="center">Zion Computers Private Limited </h2>
 
-ZCPL is a IT solutions website <br />IT infrastructure solutions and managed IT services
+Zion Computers Pvt. Ltd. is a IT solutions website <br />IT infrastructure solutions and managed IT services
 
 <a href="https://sites.google.com/a/ziongroup.com/www-zcpl-co-in/welcome-to-zion-group"><strong>➥ Website Demo</strong></a>
 
