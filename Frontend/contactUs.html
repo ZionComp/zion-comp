@@ -6,66 +6,104 @@
     <title>Contact Us</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background: #f7f7f7;
+            color: #333;
         }
-        h1 {
+        header {
             background-color: #512888; /* KSU purple */
             color: white;
             text-align: center;
             padding: 20px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        h1 {
             margin: 0;
-            transition: background-color 0.3s ease, transform 0.3s ease;
+            font-size: 2.5em;
+            transition: transform 0.3s ease;
         }
         h1:hover {
-            background-color: #4a2478; /* Slightly darker purple for hover effect */
             transform: scale(1.05);
         }
-        h2 {
-            color: #333;
-            margin-left: 20px;
-        }
-        p {
-            margin: 10px 20px 30px 20px;
-            line-height: 1.6;
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
         }
         .branch {
-            background-color: white;
-            margin: 20px;
+            background-color: #fff;
+            margin: 20px 0;
             padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .branch:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+        h2 {
+            color: #512888;
+            margin-top: 0;
+            font-size: 1.8em;
+            border-bottom: 2px solid #512888;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+        p {
+            line-height: 1.8;
+            font-size: 1.1em;
+            color: #555;
+            margin: 10px 0 0 0;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
         }
     </style>
 </head>
 <body>
-    <h1>OUR BRANCHES</h1>
-    <div class="branch">
-        <h2>Delhi</h2>
-        <p>B-19, Sanwal Nagar, Sadiq Nagar Market<br>
-        New Delhi-110049 - 110 049.</p>
+    <header>
+        <h1>OUR BRANCHES</h1>
+    </header>
+    <div class="container">
+        <div class="branch">
+            <h2>Delhi</h2>
+            <p>B-19, Sanwal Nagar, Sadiq Nagar Market<br>
+            New Delhi-110049 - 110 049.</p>
+        </div>
+        <div class="branch">
+            <h2>Bengaluru</h2>
+            <p>First Floor, Building #1, 1st Cross, 18th Main, Maranahalli Tank Bed,<br>
+            4th T Block, Jayanagar, Bangalore-560 041</p>
+        </div>
+        <div class="branch">
+            <h2>Cochin</h2>
+            <p>Third Floor, Pegees Mall, Pallimukku Jn., M G Road,<br>
+            Cochin, Kerala - 682 016.</p>
+        </div>
+        <div class="branch">
+            <h2>Mumbai</h2>
+            <p>111 A, C- Wing, Kailas Industrial Complex<br>
+            Vikhroli Hiranandani Link Road, Vikhroli (W), Mumbai - 400 079.</p>
+        </div>
+        <div class="branch">
+            <h2>Chennai</h2>
+            <p>201, 2nd Floor, R. A. Complex,<br>
+            41, Meeran Sahib Street, Mount Road, Chennai – 600 002.</p>
+        </div>
     </div>
-    <div class="branch">
-        <h2>Bengaluru</h2>
-        <p>First Floor, Building #1, 1st Cross, 18th Main, Maranahalli Tank Bed,<br>
-        4th T Block, Jayanagar, Bangalore-560 041</p>
-    </div>
-    <div class="branch">
-        <h2>Cochin</h2>
-        <p>Third Floor, Pegees Mall, Pallimukku Jn., M G Road,<br>
-        Cochin, Kerala - 682 016.</p>
-    </div>
-    <div class="branch">
-        <h2>Mumbai</h2>
-        <p>111 A, C- Wing, Kailas Industrial Complex<br>
-        Vikhroli Hiranandani Link Road, Vikhroli (W), Mumbai - 400 079.</p>
-    </div>
-    <div class="branch">
-        <h2>Chennai</h2>
-        <p>201, 2nd Floor, R. A. Complex,<br>
-        41, Meeran Sahib Street, Mount Road, Chennai – 600 002.</p>
-    </div>
+    <footer>
+        <p>&copy; 2024 Company Name. All rights reserved.</p>
+    </footer>
 </body>
 </html>
+
