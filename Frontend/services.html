@@ -1,11 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Services</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Services</title>
+  <style>
+    :root {
+      --section-padding: 60px;
+      --bg-color: #f4f4f9;
+      --primary-color: #333;
+      --highlight-color: #ff6f61;
+      --text-color: #555;
+      --secondary-color: #ff6f61;
+      --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      --radius-12: 12px;
+      --fs-8: 16px;
+      --fs-2: 24px;
+      --fw-700: 700;
+    }
+
+    .section {
+      padding: var(--section-padding) 0;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 15px;
+    }
+
+    .section-title {
+      font-size: 32px;
+      text-align: center;
+      color: var(--primary-color);
+      position: relative;
+      margin-bottom: 40px;
+    }
+
+    .underline::before {
+      content: '';
+      display: block;
+      width: 80px;
+      height: 4px;
+      background-color: var(--highlight-color);
+      position: absolute;
+      bottom: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .services-content {
+      margin-bottom: 40px;
+    }
+
+    .service-card {
+      padding: 20px;
+      box-shadow: var(--shadow);
+      border-radius: var(--radius-12);
+      background-color: var(--secondary-color);
+      color: var(--bg-color);
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .service-title {
+      font-size: var(--fs-2);
+      font-weight: var(--fw-700);
+      margin-bottom: 10px;
+    }
+
+    .service-description {
+      font-size: var(--fs-8);
+      color: var(--text-color);
+      line-height: 1.6;
+    }
+
+    @media (min-width: 768px) {
+      .services-content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+      }
+    }
+
+    @media (min-width: 992px) {
+      .service-card {
+        margin-bottom: 0;
+      }
+    }
+  </style>
 </head>
 <body>
-    
+  <section id="services" class="services section">
+    <div class="container">
+      <h2 class="section-title underline">Our Services</h2>
+      
+      <div class="services-content">
+        <div class="service-card">
+          <h3 class="service-title">Service 1</h3>
+          <p class="service-description">Description of Service 1. It includes key features and benefits.</p>
+        </div>
+        <div class="service-card">
+          <h3 class="service-title">Service 2</h3>
+          <p class="service-description">Description of Service 2. It includes key features and benefits.</p>
+        </div>
+        <div class="service-card">
+          <h3 class="service-title">Service 3</h3>
+          <p class="service-description">Description of Service 3. It includes key features and benefits.</p>
+        </div>
+        <div class="service-card">
+          <h3 class="service-title">Service 4</h3>
+          <p class="service-description">Description of Service 4. It includes key features and benefits.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 </body>
 </html>
