@@ -363,6 +363,13 @@ body {
   padding: 4px;
 }
 
+.navbar-complaint {
+  padding-left: 10px;
+  padding-right: 15px;
+  border: 2px solid #FA8128;
+  border-radius: 30px;
+}
+
 .navbar-item:not(:last-child) {
   border-bottom: 1px solid var(--platinum);
 }
