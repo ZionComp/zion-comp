@@ -374,7 +374,7 @@ body {
   border-bottom: 1px solid var(--platinum);
 }
 
-.navbar ul li::after {
+.navbar ul li:not(.navbar-complaint)::after {
   content: '';
   width: 0;
   height: 2px;
