@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
     <style>
         body {
             font-family: 'Helvetica Neue', Arial, sans-serif;
@@ -12,8 +14,10 @@
             background: #f7f7f7;
             color: #c5c2ce;
         }
+
         header {
-            background-color: #f508a6; /* KSU purple */
+            background-color: #f508a6;
+            /* KSU purple */
             color: white;
             text-align: center;
             padding: 20px 0;
@@ -22,19 +26,23 @@
             top: 0;
             z-index: 1000;
         }
+
         h1 {
             margin: 0;
             font-size: 2.5em;
             transition: transform 0.3s ease;
         }
+
         h1:hover {
             transform: scale(1.05);
         }
+
         .container {
             max-width: 1200px;
             margin: 0 auto;
             padding: 20px;
         }
+
         .branch {
             background-color: #fff;
             margin: 20px 0;
@@ -43,10 +51,12 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
+
         .branch:hover {
             transform: translateY(-10px);
             box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
         }
+
         h2 {
             color: #512888;
             margin-top: 0;
@@ -55,12 +65,14 @@
             display: inline-block;
             padding-bottom: 5px;
         }
+
         p {
             line-height: 1.8;
             font-size: 1.1em;
             color: #fc0679;
             margin: 10px 0 0 0;
         }
+
         footer {
             background-color: #0f0f0f;
             color: white;
@@ -70,40 +82,196 @@
         }
     </style>
 </head>
+
 <body>
-    <header>
-        <h1>OUR BRANCHES</h1>
+    <header class="header" data-header>
+        <div class="container">
+
+            <div class="overlay" data-overlay></div>
+
+            <img src="assets\images\Zion Round logo.png" width="87">
+            <h1 class="logo">Zion Computers</h1>
+            </a>
+
+            <nav class="navbar" data-navbar>
+
+                <div class="navbar-top">
+                    <a href="#home" class="logo"></a>
+
+                    <button class="nav-close-btn" aria-label="Close Menu" data-nav-close-btn>
+                        <ion-icon name="close-outline"></ion-icon>
+                    </button>
+                </div>
+
+                <ul class="navbar-list">
+
+                    <li class="navbar-item">
+                        <a href="#home" class="navbar-link" data-navbar-link>Home</a>
+                    </li>
+
+                    <li class="navbar-item">
+                        <a href="./Frontend/aboutUs.html" class="navbar-link" data-navbar-link>About</a>
+                    </li>
+
+                    <li class="navbar-item">
+                        <a href="./Frontend/solutions.html" class="navbar-link" data-navbar-link>Solutions</a>
+                    </li>
+
+                    <li class="navbar-item">
+                        <a href="./Frontend/services.html" class="navbar-link" data-navbar-link>Services</a>
+                    </li>
+
+                    <li class="navbar-item">
+                        <a href="./Frontend/contactUs.html" class="navbar-link" data-navbar-link>Contact Us</a>
+                    </li>
+
+                    <!-- <li class="navbar-item">
+                <a href="./LOGIN PAGE/index.html#login" class="navbar-link" data-navbar-link>Login</a>
+            </li>
+    
+            <li class="navbar-item">
+                <a href="./LOGIN PAGE/index.html#signup" class="navbar-link" data-navbar-link>SignUp</a>
+            </li> -->
+                    <li class="navbar-complaint">
+                        <a href="#" class="navbar-link" data-navbar-link>Raise A Complaint</a>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+
+            <button class="nav-open-btn" aria-label="Open Menu" data-nav-open-btn>
+                <ion-icon name="menu-outline"></ion-icon>
+            </button>
+
+        </div>
     </header>
-    <div class="container">
-        <div class="branch">
-            <h2>Delhi</h2>
-            <p>B-19, Sanwal Nagar, Sadiq Nagar Market<br>
-            New Delhi-110049 - 110 049.</p>
-        </div>
-        <div class="branch">
-            <h2>Bengaluru</h2>
-            <p>First Floor, Building #1, 1st Cross, 18th Main, Maranahalli Tank Bed,<br>
-            4th T Block, Jayanagar, Bangalore-560 041</p>
-        </div>
-        <div class="branch">
-            <h2>Cochin</h2>
-            <p>Third Floor, Pegees Mall, Pallimukku Jn., M G Road,<br>
-            Cochin, Kerala - 682 016.</p>
-        </div>
-        <div class="branch">
-            <h2>Mumbai</h2>
-            <p>111 A, C- Wing, Kailas Industrial Complex<br>
-            Vikhroli Hiranandani Link Road, Vikhroli (W), Mumbai - 400 079.</p>
-        </div>
-        <div class="branch">
-            <h2>Chennai</h2>
-            <p>201, 2nd Floor, R. A. Complex,<br>
-            41, Meeran Sahib Street, Mount Road, Chennai – 600 002.</p>
-        </div>
-    </div>
+    <main>
+        <section class="section about" id="about">
+            <div class="container">
+
+                <figure class="about-banner">
+                    <img src="assets\images\pc2.png" width="532" height="532" loading="lazy" alt="about banner"
+                        class="w-100 banner-animation">
+                </figure>
+
+                <div class="about-content">
+
+                    <h2 class="h2 section-title underline">Our Branches</h2>
+
+                    <div class="about-text">
+                        <ul>
+                            <li>
+                                <h1>1. Delhi</h1>
+                                <p>
+                                    With years of experience in the industry, our team of IT professionals has the
+                                    expertise to
+                                    tackle
+                                    even the most complex IT challenges.
+                                </p>
+                                <br>
+                            </li>
+                            <li>
+                                <h1>2. Customer-Centric Approach:</h1>
+                                <p>
+                                    We prioritize customer satisfaction above all else. Our dedicated support team is
+                                    available
+                                    round-the-clock to address your concerns and ensure your peace of mind.
+                                </p>
+                                <br>
+                            </li>
+                            <li>
+                                <h1>3. Customized Solutions:</h1>
+                                <p>
+                                    We understand that every business is unique. That's why we work closely with you to
+                                    develop
+                                    customized IT solutions tailored to your specific needs and objectives.
+                                </p>
+                                <br>
+                            </li>
+                            <li>
+                                <h1>4. Cutting-Edge Technology:</h1>
+                                <p>
+                                    We stay ahead of the curve by constantly evaluating and adopting the latest
+                                    technologies.
+                                    With us,
+                                    you can rest assured that you're always getting the most innovative solutions
+                                    available.
+                                </p>
+                                <br>
+                            </li>
+                            <li>
+                                <h1>5. Proven Track Record:</h1>
+                                <p>
+                                    Our track record speaks for itself. Countless satisfied clients have relied on us to
+                                    deliver
+                                    reliable, cost-effective IT solutions that drive real results.
+                                </p>
+                                <br>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- <ul class="stats-list">
+        
+                      <li class="stats-card">
+                        <p class="h3 stats-title">9875</p>
+        
+                        <p class="stats-text">Satisfied Clients</p>
+                      </li>
+        
+                      <li class="stats-card">
+                        <p class="h3 stats-title">7894</p>
+        
+                        <p class="stats-text">Project Lunched</p>
+                      </li>
+        
+                      <li class="stats-card">
+                        <p class="h3 stats-title">30</p>
+        
+                        <p class="stats-text">Years Completed</p>
+                      </li>
+        
+                    </ul> -->
+
+                </div>
+
+            </div>
+        </section>
+        <!-- <header>
+        <h1>OUR BRANCHES</h1>
+    </header> -->
+        <!-- <div class="container">
+            <div class="branch">
+                <h2>Delhi</h2>
+                <p>B-19, Sanwal Nagar, Sadiq Nagar Market<br>
+                    New Delhi-110049 - 110 049.</p>
+            </div>
+            <div class="branch">
+                <h2>Bengaluru</h2>
+                <p>First Floor, Building #1, 1st Cross, 18th Main, Maranahalli Tank Bed,<br>
+                    4th T Block, Jayanagar, Bangalore-560 041</p>
+            </div>
+            <div class="branch">
+                <h2>Cochin</h2>
+                <p>Third Floor, Pegees Mall, Pallimukku Jn., M G Road,<br>
+                    Cochin, Kerala - 682 016.</p>
+            </div>
+            <div class="branch">
+                <h2>Mumbai</h2>
+                <p>111 A, C- Wing, Kailas Industrial Complex<br>
+                    Vikhroli Hiranandani Link Road, Vikhroli (W), Mumbai - 400 079.</p>
+            </div>
+            <div class="branch">
+                <h2>Chennai</h2>
+                <p>201, 2nd Floor, R. A. Complex,<br>
+                    41, Meeran Sahib Street, Mount Road, Chennai – 600 002.</p>
+            </div>
+        </div> -->
+    </main>
     <footer>
         <p>&copy; 2024 zioncomp. All rights reserved.</p>
     </footer>
 </body>
-</html>
 
+</html>
