@@ -370,6 +370,12 @@ body {
   border-radius: 30px;
 }
 
+.navbar ul li:not(.navbar-item):hover {
+  background-color: #FA8128;
+  color: #fff;
+  transition: all 0.5s;
+}
+
 .navbar-item:not(:last-child) {
   border-bottom: 1px solid var(--platinum);
 }
