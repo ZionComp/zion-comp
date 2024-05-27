@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Solutions</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    :root {
+      --section-padding: 60px;
+      --bg-color: #f4f4f9;
+      --primary-color: #333;
+      --highlight-color: #ff6f61;
+      --text-color: #555;
+      --secondary-color: #ff6f61;
+      --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      --radius-12: 12px;
+      --fs-8: 16px;
+      --fs-2: 24px;
+      --fw-700: 700;
+    }
+
+    .section {
+      padding: var(--section-padding) 0;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 15px;
+    }
+
+    .section-title {
+      font-size: 32px;
+      text-align: center;
+      color: var(--primary-color);
+      position: relative;
+      margin-bottom: 40px;
+    }
+
+    .underline::before {
+      content: '';
+      display: block;
+      width: 80px;
+      height: 4px;
+      background-color: var(--highlight-color);
+      position: absolute;
+      bottom: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .solutions-content {
+      margin-bottom: 40px;
+    }
+
+    .solutions-text {
+      font-size: var(--fs-8);
+      color: var(--text-color);
+      margin-bottom: 20px;
+      line-height: 1.6;
+    }
+
+    .solutions-list {
+      display: grid;
+      gap: 30px;
+    }
+
+    .solution-card {
+      text-align: center;
+      padding: 15px;
+      box-shadow: var(--shadow);
+      border-radius: var(--radius-12);
+      background-color: var(--secondary-color);
+      color: var(--bg-color);
+    }
+
+    .solution-title {
+      color: var(--bg-color);
+      font-size: var(--fs-2);
+      font-weight: var(--fw-700);
+      margin-bottom: 10px;
+    }
+
+    .solution-text {
+      font-size: var(--fs-8);
+    }
+
+    @media (min-width: 550px) {
+      .solutions-list {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    @media (min-width: 992px) {
+      .solutions .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+    
+  <section id="solutions" class="solutions section">
+    <div class="container">
+      <h2 class="section-title underline">Our Solutions</h2>
+
+      <div class="solutions-content">
+        <p class="solutions-text">
+          At our company, we offer a range of innovative solutions tailored to meet the unique needs of our clients. Our
+          solutions are designed to drive efficiency, enhance performance, and deliver measurable results.
+        </p>
+        <p class="solutions-text">
+          We leverage cutting-edge technology and industry best practices to provide solutions that are not only
+          effective but also sustainable. Explore our solutions to find out how we can help you achieve your business
+          objectives.
+        </p>
+      </div>
+
+      <ul class="solutions-list">
+        <li class="solution-card">
+          <h3 class="solution-title">Solution 1</h3>
+          <p class="solution-text">Description of solution 1. It includes key features and benefits.</p>
+        </li>
+        <li class="solution-card">
+          <h3 class="solution-title">Solution 2</h3>
+          <p class="solution-text">Description of solution 2. It includes key features and benefits.</p>
+        </li>
+        <li class="solution-card">
+          <h3 class="solution-title">Solution 3</h3>
+          <p class="solution-text">Description of solution 3. It includes key features and benefits.</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+</body>
+
+</html>
